@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+/* Theme Name: Landing Page for Photographer
+Author: Mariusz Kozak 
+Copyright 2021. All rights reserved */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ /* Page Styles */
+
+ h1 {
+     font-size: 4rem;
+ }
+
+ li,
+ button,
+ label,
+ input,
+ p {
+     font-size: 2.5re;
+ }
+h2 {
+    font-size: 4.8rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+h4,h5 {
+    font-size: 2.8rem;
+}
+button {
+    padding: 2rem 6rem;
+    background: #9ccc65;
+    border: none;
+    border-radius: 4px;
+    color: whitesmoke;
+    font-size: 1.6rem;
+    font-weight: 5 00;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 1s ease-in-out;
+}
+button:hover {
+    background: rgb(94, 122, 16);
+}
