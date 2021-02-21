@@ -16,41 +16,36 @@ Copyright 2021. All rights reserved */
     box-sizing: border-box;
 }
 html {
-    font-size: 62.5%;
-    font-family: 'Lato', sans-serif;
     --header1: calc(2rem + 1vw);
     --header2: calc(3.5rem + 1vw);
     --header3: calc(3rem + 1vw);
     --header4: calc(2.4rem + 1vw);
-    --text: calc(1.5rem + 1vw);
+    --text: calc(0.5rem + 1vw);
     --big: calc(2.5rem + 1vw);
     --accent-color: #906272;
     --background-color: #414141;
     --grey-text: #525252;
 }
+body {
+    font-family: 'Lato', sans-serif;
+}
 a {
     text-decoration: none;
 }
-
- /* Page Styles */
-
- h1 {
-     font-size: var(--header1);
-     font-family: 'Roboto Slab', serif;
- }
-
- li,
+li,
  button,
  label,
  input,
  p {
      font-size: var(--text);
  }
- .flex {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
+
+ /* Page Styles */
+
+ h1 {
+     font-size: var(--header1);
+     font-family: 'Roboto Slab', serif;
+     font-weight: lighter;
  }
  ul {
      list-style: none;
@@ -63,4 +58,18 @@ h3 {
 }
 h4,h5 {
     font-size: var(--header4);
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Page Styles */
+
+h1 #logo {
+    font-family: 'Roboto Slab' sans-serif;
+    font-weight: lighter;
+    color: chocolate;
 }
