@@ -20,7 +20,7 @@ html {
     --header2: calc(3.5rem + 1vw);
     --header3: calc(3rem + 1vw);
     --header4: calc(2.4rem + 1vw);
-    --text: calc(0.5rem + 1vw);
+    --text: calc(0.3rem + 1vw);
     --big: calc(2.5rem + 1vw);
     --links: calc(0.2rem + 1vw);
     --accent-color: #906272;
@@ -40,16 +40,19 @@ a {
 li,
  button,
  label,
- input,
- p {
+ input {
      font-size: var(--text);
  }
-
+p {
+    color: rgb(83, 83, 83); 
+    font-size: var(--text);
+    font-weight: lighter;
+}
  /* Page Styles */
 
  h1 {
      font-size: var(--header1);
-     font-family: 'Pacifico', cursive;
+     font-family: 'Roboto Slab', serif;
      font-weight: lighter;
      color: rgb(83, 83, 83);
  }
@@ -60,6 +63,7 @@ h2 {
     font-size: var(--header2);
     font-family: 'Roboto Slab', serif;
     font-weight: lighter;
+    color: var(--accent-color);
 }
 h3 {
     font-size: var(--header3);
@@ -81,7 +85,7 @@ h4,h5 {
 /* Nav Section */
 
 .main-head {
-    background: rgb(255, 252, 248);
+    background: #f6f3ee;
     box-shadow: 0px 5px 5px rgba(0,0,0, 0.2);
     z-index: 2;
     position: relative;
@@ -104,7 +108,7 @@ nav {
 }
 .hero {
     min-height: 90vh;
-    width: 95%;
+    width: 100%;
     margin: 0 0 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -115,7 +119,7 @@ nav {
     text-align: center;
 }
 .hero-introduction p {
-    padding: 5rem 10rem;
+    padding: 3rem 4rem;
 }
 .hero-introduction h2 {
     padding-top: 3rem;
@@ -127,7 +131,7 @@ nav {
 }
 .hero-images {
     flex: 1 1 40rem;
-    background: linear-gradient(#cdcad1, #dad1d4); 
+    background: linear-gradient(#eee3da, #f6f3ee); 
     position: relative;
     z-index: 1;
 }
@@ -145,6 +149,7 @@ nav {
     plant-shake 2.5s infinite ease alternate-reverse 4s;
     transform:  translateY(10%) rotateZ(-10deg) rotateX(-90deg);
     transform-origin: bottom;
+    max-height: 80%;
 }
 .plant2 {
     left: 40%;
@@ -174,5 +179,17 @@ nav {
     }
     to {
         transform: rotateZ(0deg);
+    }
+}
+
+/* Media screens */
+
+@media screen and (max-width: 831px) {
+    .hero {
+        width: 100%;
+    }
+    .hero-introduction p {
+        padding: 2rem 2rem;
+        font-size: 1rem;
     }
 }
