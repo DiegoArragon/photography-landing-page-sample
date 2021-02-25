@@ -155,6 +155,20 @@ nav {
     left: 40%;
 }
 
+/* About Section */
+
+.about {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-text {
+    flex: 2 1 40rem;
+}
+.about-image {
+    flex: 1 1 40rem;
+}
+
 /* Animations */
 
 @keyframes opening {
