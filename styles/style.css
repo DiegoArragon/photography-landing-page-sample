@@ -157,17 +157,42 @@ nav {
 
 /* About Section */
 
-.about {
+#about {
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
 }
 .about-text {
     flex: 2 1 40rem;
+    justify-content: space-around;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+.about-text h2 {
+    padding: 2rem 0rem;
+}
+.about-text h3 {
+    padding: 1rem 0rem;
+}
+.about-text div {
+    padding: 3rem 8rem;
 }
 .about-image {
     flex: 1 1 40rem;
+    position: relative;
 }
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-image h5 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    letter-spacing: 2rem;
+}
+
 
 /* Animations */
 
@@ -205,5 +230,10 @@ nav {
     .hero-introduction p {
         padding: 2rem 2rem;
         font-size: 1rem;
+    }
+    /* About Section */
+
+    .about-text div {
+        padding: 3rem 3rem;
     }
 }
